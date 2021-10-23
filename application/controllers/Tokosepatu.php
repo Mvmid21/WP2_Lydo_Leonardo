@@ -3,11 +3,13 @@
  {
     public function index()
     {
+        $this->load->view('view-header-tokosepatu');
         $this->load->view('view-form-tokosepatu');
-    }
+     }
 
     public function cetak()
     {
+        $this->load->view('view-header-tokosepatu');
         $this->form_validation->set_rules(
             'nama',
             'nama',
@@ -24,8 +26,28 @@
             'no hp',
             'required|min_length[11]',
             [
-                'required' => 'No HP Harus diisi',
+                'required' => 'No HP Harus di isi',
                 'min_length' => 'No HP terlalu pendek'
+            ]
+        
+        );
+
+        $this->form_validation->set_rules(
+            'merk',
+            'merk spt',
+            'required',
+            [
+                'required' => 'Merek Harus dipilih',
+            ]
+        
+        );
+
+        $this->form_validation->set_rules(
+            'ukuran',
+            'ukuran Spt',
+            'required',
+            [
+                'required' => 'Ukuran Harus dipilih',
             ]
         
         );
@@ -38,7 +60,7 @@
                 'nama' => $this->input->post('nama'),
                 'no' => $this->input->post('no'),
                 'merk' => $this->input->post('merk'),
-                'size' => $this->input->post('size'),
+                'ukuran' => $this->input->post('ukuran'),
                 'harga' => $this->input->post('harga'),
             ];
 
@@ -54,7 +76,9 @@
                 $data['harga'] = 400000;
             }
 
+
             $this->load->view('view-data-tokosepatu' , $data);
+            $this->load->view('view-footer-tokosepatu');
         }
     }
 }

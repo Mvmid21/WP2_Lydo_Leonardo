@@ -2,23 +2,23 @@
     <h1><?php echo $judul ?></h1>
     <h4>Nama</h4>
     <ul type="disc">
-        <li>Nama Depan : May</li>
-        <li>Nama Belakang : Muna</li>
+        <li>Nama Depan : Lydo</li>
+        <li>Nama Belakang : Leonardo</li>
     </ul>
     <br>
     <h4>Alamat</h4>
     <ul type="disc">
-        <li> Jalan Penghubung Peniti Luar </li>
+        <li> Jalan Komyos Sudarso </li>
     </ul>
  
     <h4>Tempat Lahir</h4>
     <ul type="square">
-        <li>Sungai Keluang</li>
+        <li>Pontianak</li>
     </ul>
     <h4>Olah Raga Favorit</h4>
     <ul type="square">
-        <li>Bulutangkis</li>
-        <li>Berenang</li>
+        <li>Olah raga Angkat beban</li>
+        <li>Olah raga Fisik</li>
     </ul>
 </section>
 
