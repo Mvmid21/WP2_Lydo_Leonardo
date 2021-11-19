@@ -9,34 +9,33 @@
         }
     </style>
 </head>
+
 <body>
+    <center>
         <form action="<?= base_url('tokosepatu/cetak'); ?>" method="post">
-        <center>
-            <table cellpadding="10"> 
+            <table bgcolor='turquoise' width="200px">
                 <tr>
-                <th> <?= form_error('nama'); ?></th>
-                <th><?= form_error('no'); ?></th>
-                <th> <?= form_error('merk'); ?></th>
-                <th> <?= form_error('ukuran'); ?></th>
+                    <th>
+                        <h3>TOKO SEPATU MAYMUNA</h3>
+                        <hr>
+                    </th>
                 </tr>
-                </table>
- 
-                <table cellpadding=10>
+
                 <tr>
-                    <td colspan="5">NAMA PEMBELI</td>
-                    <td>:</td>
-                    <td><input type="text" name="nama" id="nama" placeholder="Nama" style="width: 200px;"></td>
+                    <td colspan="5"><input type="text" name="nama" id="nama" placeholder="Nama"></td>
                 </tr>
                 <tr>
-                    <td colspan="5">NO HP</td>
-                    <td>:</td>
-                    <td> <input type="text" name='no' id='no' placeholder="No HP" style="width: 200px;"></td>
+                    <td class="error1"><b> <?= form_error('nama'); ?></b></td>
                 </tr>
                 <tr>
-                    <td colspan="5">MERK SEPATU</td>
-                    <td>:</td>
+                    <td> <input type="text" name='no' id='no' placeholder="No HP"></td>
+                </tr>
+                <tr>
+                    <td class="error1"><b> <?= form_error('no'); ?></b></td>
+                </tr>
+                <tr>
                     <td>
-                        <select name="merk" id="merk" placeholder="merk spt" style="width: 200px; text-align: center">
+                        <select name="merk" id="merk">
                             <option value="">--PILIH MERK SEPATU--</option>
                             <option value="Nike">NIKE</option>
                             <option value="Adidas">ADIDAS</option>
@@ -45,40 +44,54 @@
                             <option value="Bucherri">BUCHERRI</option>
                         </select>
                     </td>
+                </tr>
                 <tr>
-                    <td colspan="5">UKURAN SEPATU</td>
-                    <td>:</td>
+                    <td class="error1"><b> <?= form_error('merk'); ?></b></td>
+                </tr>
+                <tr>
+                    <td><b>UKURAN SEPATU :</b></td>
+                </tr>
+                <tr>
                     <td>
-                    <select name="ukuran" id="ukuran" placeholder="ukuran Spt" style="
-                    width: 200px; text-align: center">
-                            <option value="">--PILIH UKURAN SEPATU--</option>
-                            <option value="34">34</option>
-                            <option value="35">35</option>
-                            <option value="36">36</option>
-                            <option value="37">37</option>
-                            <option value="38">38</option>
-                            <option value="39">39</option>
-                            <option value="40">40</option>
-                            <option value="41">41</option>
-                            <option value="42">42</option>
-                            <option value="43">43</option>
-                            <option value="44">44</option>
-                        </select>
+                        <input type="radio" name="size" value="32">32
+                        <input type="radio" name="size" value="33">33
+                        <input type="radio" name="size" value="34">34
+                        <input type="radio" name="size" value="35">35
+                    </td>
+                </tr>
+                    <td></td>
+                <tr>
+                    <td>
+                        <input type="radio" name="size" value="36">36
+                        <input type="radio" name="size" value="37">37
+                        <input type="radio" name="size" value="38">38
+                        <input type="radio" name="size" value="39">39
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="size" value="40">40
+                        <input type="radio" name="size" value="41">41
+                        <input type="radio" name="size" value="42">42
+                        <input type="radio" name="size" value="43">43
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="size" value="44">44
+                    </td>
+                </tr>
+                <tr>
+                    <td class="error1"><b> <?= form_error('size'); ?></b></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="3">
+                        <input type="submit" name="KONFIRMASI">
+                        <input type="reset" name="BATAL">
                     </td>
                 </tr>
             </table>
-            <br>  
-            </center>
-        <footer>
-        <table style="float:right">.
-                <tr>
-                <td><input type="submit" value="KONFIRMASI"></td>
-                <td><input type="reset" value="BATAL"></td>
-                </tr>
-            </table>
-    </footer>
-</body>
-</html>
+    </center>
 </body>
 
 </html>
