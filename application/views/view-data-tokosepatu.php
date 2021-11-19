@@ -5,11 +5,10 @@
 </head>
 
 <body>
-    <center>
-        <table bgcolor="green">
+        <table>
             <tr>
                 <th colspan="5">
-                    <h3>TOKO SEPATU</h3>
+                    <h3>TOKO SEPATU LYDO LEONARDO</h3>
                     <hr>
                 </th>
             </tr>
@@ -57,6 +56,6 @@
             </tr>
         </table>
         <p><button><a href="<?php echo base_url() . 'index.php/tokosepatu' ?>">KEMBALI</a></button></p>
-    </center>
+
 </body>
 </html>

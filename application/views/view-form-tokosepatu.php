@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <center>
+
         <form action="<?= base_url('tokosepatu/cetak'); ?>" method="post">
             <table bgcolor='turquoise' width="200px">
                 <tr>
                     <th>
-                        <h3>TOKO SEPATU</h3>
+                        <h3>TOKO SEPATU LYDO LEONARDO</h3>
                         <hr>
                     </th>
                 </tr>
@@ -91,7 +91,7 @@
                     </td>
                 </tr>
             </table>
-    </center>
+
 </body>
 
 </html>
